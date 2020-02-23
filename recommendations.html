@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Recommendations</title>
+</head>
+
+<div class="recommendations" align="left">
+  <b>Recommended Anime for You</b><br>
+    {% if user_recommendations %}
+      {% for anime in user_recommendations %}
+        <br>{{ anime }}
+      {% endfor %}
+    {% endif %}
+</div>
+
+
+<body>
+
+</body>
+</html>	
